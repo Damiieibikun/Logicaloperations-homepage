@@ -31,13 +31,11 @@ body {
 }
 
 .txt-lg-light {
-  /* font-size: 1.8rem; */
   font-weight: 100;
   font-size: 2vw;
 }
 
 .txt-regular {
-  /* font-size: 1rem; */
   font-weight: 100;
   font-size: 1.2vw;
 }
@@ -134,7 +132,6 @@ body {
   background-color: #242424;
   color: white;
   overflow: hidden;
-  /* height: 250px; */
 }
 
 .grid-items1 {
@@ -142,13 +139,36 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.359);
   gap: 5px;
   padding: 10px;
-  /* height: 230px; */
 }
 
 .grid-items1a img {
   max-width: 55%;
 }
 
+.grid2{
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    color: white; 
+    background-color: #009ddc;
+}
+.grid-items2 {
+    border: 1px solid rgba(0, 0, 0, 0.338);
+    padding: 15px;  
+}
+
+.grid2-txt-thick{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.grid2-txt-light{
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+.grid2-learn{
+    font-size: 1vw;
+    font-weight: 100;
+}
 /* Media queries */
 
 @media screen and (min-width: 1441px) {
@@ -191,12 +211,10 @@ body {
     .hero-btns div {
       padding: 25px 10px;
     }
+    .grid-items2 {
+        padding: 30px;  
+    }
   }
-
-
-
-
-
 
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
   
@@ -237,6 +255,9 @@ body {
   
     .hero-btns div {
       padding: 10px;
+    }
+    .grid-items2 {
+        padding: 25px;  
     }
   }
 
@@ -283,6 +304,10 @@ body {
   .hero-btns div {
     padding: 10px;
   }
+
+  .grid-items2 {
+    padding: 18px;  
+}
 }
 
 /* Tablet large */
