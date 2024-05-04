@@ -1,247 +1,435 @@
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .gap {
-    gap: 10px;
+  gap: 10px;
 }
 
 .grid-items {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .txt-lg-light {
-    /* font-size: 1.8rem; */
-    font-weight: 100;
-    font-size: 2vw;
+  /* font-size: 1.8rem; */
+  font-weight: 100;
+  font-size: 2vw;
 }
 
 .txt-regular {
-    /* font-size: 1rem; */
-    font-weight: 100;
-    font-size: 1.2vw;
+  /* font-size: 1rem; */
+  font-weight: 100;
+  font-size: 1.2vw;
 }
-
 
 /* Navigation styles */
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.747);
-    color: white;
-    grid-template-columns: 1fr 1fr;
-    width: 100vw;
-    font-size: 1vw;
-    padding: 5px 0;
-    position: fixed;
-    top: 0;
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  font-size: 1vw;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
 }
 
 #logo img {
-    width: 28%;
-    margin-left: 100px;
+  width: 28%;
+  margin-left: 100px;
 }
 
 .nav button {
-    background-color: #ffc427;
-    color: white;
-    padding: 12px 10px;
-    border: none;
-    border-radius: 7px;
-    font-size: 1vw;
+  background-color: #ffc427;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1vw;
 }
 
 .menu-info {
-    gap: 30px;
+  gap: 30px;
 }
 
 .nav-logos {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* Main */
 
 .main {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .hero {
-    background-image: url('../images/lo-homepage-background-010721.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+  background-image: url("../images/lo-homepage-background-010721.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  grid-template-columns: 1fr 1fr;
+  color: white;
 }
 
+.hero-items {
+  padding: 10px;
+  flex-direction: column;
+}
+
+.hero-items h1 {
+  font-size: 3vw;
+}
+
+.hero-items p {
+  font-size: 1.7vw;
+}
+
+.hero-btns {
+  grid-template-columns: repeat(3, auto);
+  width: 35vw;
+  font-size: 1.2vw;
+}
+
+.hero-btns div {
+  background-color: #009ddc;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 3px;
+}
+
+.hero-btns :nth-child(1) {
+  background-color: #ee3831;
+}
 
 /* Grid styles */
 
 .grid1 {
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #242424;
-    color: white;
-    overflow: hidden;
-    /* height: 250px; */
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #242424;
+  color: white;
+  overflow: hidden;
+  /* height: 250px; */
 }
 
 .grid-items1 {
-    grid-template-columns: repeat(2, 1fr);
-    border: 1px solid rgba(255, 255, 255, 0.359);
-    gap: 5px;
-    padding: 10px;
-    /* height: 230px; */
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid rgba(255, 255, 255, 0.359);
+  gap: 5px;
+  padding: 10px;
+  /* height: 230px; */
 }
 
 .grid-items1a img {
-    max-width: 55%;
+  max-width: 55%;
 }
 
+/* Media queries */
 
-@media screen and (max-width: 1440px) and (min-width: 769px) {
-    body {
-        background-color: blueviolet;
-    }
+@media screen and (min-width: 1441px) {
+  
     .nav {
-        font-size: 1.5vw;
-        min-width: 320px;
-        overflow: hidden;
+      min-width: 320px;
+      overflow: hidden;
     }
     .nav button {
-        font-size: 1.3vw;
-        padding: 10px;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-}
+      font-size: 1.3vw;
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
     #logo img {
-        width: 35%;
-        margin-left: 15px;
+      width: 35%;
+      margin-left: 15px;
     }
     .menu-info {
-        margin-right: 15px;
+      margin-right: 15px;
     }
     .nav-logos {
-        width: 35%;
+      width: 25%;
     }
     .hero {
-        height: 90vh;
+      height: 100vh;
+      padding: 35px 45px;
     }
-}
+  
+    .hero-items img {
+      width: 70%;
+    }
+    .hero-btns {
+      width: 42vw;
+    }
+  
+    .hero-btns div {
+      padding: 25px 10px;
+    }
+  }
 
-@media screen and (max-width: 769px) and (min-width: 426px) {
-    body {
-        background-color: blueviolet;
-    }
+
+
+
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  
     .nav {
-        font-size: 2vw;
-        min-width: 320px;
-        overflow: hidden;
+      min-width: 320px;
+      overflow: hidden;
     }
     .nav button {
-        font-size: 1.5vw;
-        padding: 10px;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
+      font-size: 1.3vw;
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
     #logo img {
-        width: 45%;
-        margin-left: 15px;
+      width: 35%;
+      margin-left: 15px;
     }
     .menu-info {
-        margin-right: 15px;
+      margin-right: 15px;
     }
     .nav-logos {
-        width: 40%;
+      width: 35%;
     }
+    .hero {
+      height: 100vh;
+      padding: 35px;
+    }
+  
+    .hero-items img {
+      width: 80%;
+    }
+    .hero-btns {
+      width: 42vw;
+    }
+  
+    .hero-btns div {
+      padding: 10px;
+    }
+  }
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+ 
+  .nav {
+    min-width: 320px;
+    overflow: hidden;
+  }
+  .nav button {
+    font-size: 1.3vw;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #logo img {
+    width: 35%;
+    margin-left: 15px;
+  }
+  .menu-info {
+    margin-right: 15px;
+  }
+  .nav-logos {
+    width: 35%;
+  }
+  .hero {
+    height: 100vh;
+    padding: 0 15px;
+  }
+
+  .hero-items img {
+    width: 80%;
+  }
+  .hero-btns {
+    width: 42vw;
+  }
+
+  .hero-btns div {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 655px) {
+
+  .nav {
+    /* font-size: 2vw; */
+    min-width: 320px;
+    overflow: hidden;
+  }
+  .nav button {
+    font-size: 1vw;
+    padding: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #logo img {
+    width: 45%;
+    margin-left: 15px;
+  }
+  .menu-info {
+    margin-right: 15px;
+  }
+  .nav-logos {
+    width: 40%;
+  }
+
+  .hero-items img {
+    width: 80%;
+  }
+
+  .hero-btns div {
+    padding: 10px;
+  }
+
+  .hero-btns {    
+    width: 45vw;
+ 
+  }
+}
+
+@media screen and (max-width: 655px) and (min-width: 426px) {
+    .hero {
+        height: 60vh;
+      }
 }
 
 @media screen and (max-width: 426px) and (min-width: 320px) {
-    body {
-        background-color: red;
-    }
-    .nav {
-        font-size: 2vw;
-        min-width: 320px;
-        overflow: hidden;
-    }
-    .nav button {
-        font-size: 1.5vw;
-        padding: 3px 10px;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-}
-    #logo img {
-        width: 60%;
-        margin-left: 15px;
-    }
-    .menu-info {
-        margin-right: 15px;
-    }
-    .nav-logos {
-        width: 25%;
-    }
-    .hero {
-        height: 40vh;
-    }
+  body {
+    background-color: red;
+  }
+  .nav {
+    /* font-size: 2vw; */
+    min-width: 320px;
+    padding: 3px 0;
+    overflow: hidden;
+  }
+  .nav button {
+    font-size: 1vw;
+    padding: 3px 7px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  #logo img {
+    width: 60%;
+    margin-left: 15px;
+  }
+  .menu-info {
+    margin-right: 15px;
+  }
+  .nav-logos {
+    width: 25%;
+  }
+  .hero {
+    height: 40vh;
+  }
+  .hero-items img {
+    width: 90%;
+  }
+
+  
+  .hero-btns div {
+    padding: 3px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
+.hero-btns {    
+    width: 45vw;
+ 
+  }
+}
 
 @media screen and (max-width: 319px) {
-    body {
-        background-color: red;
-    }
-    .nav {
-        font-size: 2vw;
-        max-width: 320px;
-        overflow: hidden;
-    }
-    .nav button {
-        font-size: 1.5vw;
-        padding: 3px 10px;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
+  body {
+    background-color: red;
+  }
+  .nav {
+    /* font-size: 2vw; */
+    max-width: 320px;
+    overflow: hidden;
+  }
+  .nav button {
+    font-size: 1vw;
+    padding: 3px 7px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  #logo img {
+    width: 60%;
+    margin-left: 15px;
+  }
+  .menu-info {
+    margin-right: 15px;
+  }
+  .nav-logos {
+    width: 25%;
+  }
+  .hero {
+    height: 40vh;
+  }
+
+  .hero-items img {
+    width: 90%;
+  }
+
+  .hero-btns div {
+    padding: 3px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
-    #logo img {
-        width: 60%;
-        margin-left: 15px;
-    }
-    .menu-info {
-        margin-right: 15px;
-    }
-    .nav-logos {
-        width: 25%;
-    }
-    .hero {
-        height: 40vh;
-    }
+
+.hero-btns {    
+    width: 45vw;
+ 
+  }
 }
