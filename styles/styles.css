@@ -132,7 +132,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   background-color: #242424;
   color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .grid-items1 {
@@ -270,6 +270,52 @@ body {
 
 .grid6-arrow{
     max-width: 50%;
+}
+
+
+/* Footer styles */
+
+.footer{
+    grid-template-columns: 1fr 1fr;
+    background-color: #060606;
+    color: rgba(255, 255, 255, 0.514);
+    align-content: center;
+    padding: 10px;
+    
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer-item{
+    justify-self: center;
+    
+}
+
+.footer-links a{
+   
+    font-size: 1.1vw;
+}
+.footer-item a{
+    color: rgba(255, 255, 255, 0.687);
+}
+.footer-item a:hover{
+    color: white;
+}
+.footer-item img{
+    max-width: 5%;
+}
+
+.footer-item img:hover{
+    cursor: pointer;
+}
+
+.footer-small-txt{
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.32);
+   justify-content: end;
+    
 }
 
 
