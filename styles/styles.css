@@ -188,8 +188,7 @@ body {
 
 .grid3-span2 {
     grid-row: span 2;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .grid-items3 img{
@@ -198,6 +197,7 @@ body {
 
 .grid3-lg-txt{
     font-size: 4.5vw;
+    margin: 0;
 }
 
 .grid3-rg-txt{
@@ -205,8 +205,31 @@ body {
     font-weight: 200;
 }
 
+/* Grid 4 */
+.grid4{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white; 
+    background-color: #972169;
+}
+.grid-items4 {
+    border: 1px solid rgba(0, 0, 0, 0.884);
+    padding: 15px;  
+    flex-direction: column;
+}
+.grid4-span2 {
+    grid-row: span 2;
+    text-align: center;   
+}
 
+.grid-items4 img{
+    max-width: 25%;
+}
 
+.grid4-rg-txt{
+    font-size: 1.7vw;
+    font-weight: 200;
+}
 
 
 
@@ -219,7 +242,7 @@ body {
       overflow: hidden;
     }
     .nav button {
-      font-size: 1.3vw;
+      font-size: 1vw;
       padding: 10px;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -228,7 +251,7 @@ body {
       -o-border-radius: 5px;
     }
     #logo img {
-      width: 35%;
+      width: 30%;
       margin-left: 15px;
     }
     .menu-info {
@@ -259,6 +282,10 @@ body {
     .grid-items3 {
         padding: 30px;  
     }
+
+    .grid-items4 {
+        padding: 20px 70px;  
+    }
   }
 
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
@@ -268,7 +295,7 @@ body {
       overflow: hidden;
     }
     .nav button {
-      font-size: 1.3vw;
+      font-size: 1vw;
       padding: 10px;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -277,7 +304,7 @@ body {
       -o-border-radius: 5px;
     }
     #logo img {
-      width: 35%;
+      width: 30%;
       margin-left: 15px;
     }
     .menu-info {
@@ -299,7 +326,7 @@ body {
     }
   
     .hero-btns div {
-      padding: 10px;
+      padding: 12px;
     }
     .grid-items2 {
         padding: 25px;  
@@ -307,6 +334,9 @@ body {
 
     .grid-items3 {
         padding: 25px;  
+    }
+    .grid-items4 {
+        padding: 20px 70px;  
     }
   }
 
@@ -351,13 +381,17 @@ body {
   }
 
   .hero-btns div {
-    padding: 10px;
+    padding: 12px;
   }
 
   .grid-items2 {
     padding: 18px;  
 }
 .grid-items3 {
+    padding: 20px;  
+}
+
+.grid-items4 {
     padding: 20px;  
 }
 }
@@ -419,6 +453,10 @@ body {
 
 .grid-items3 {
     padding: 18px;  
+}
+
+.grid-items4 {
+    padding: 20px;  
 }
 }
 
@@ -530,7 +568,7 @@ body {
 
   
   .hero-btns div {
-    padding: 3px;
+    padding: 7px;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
