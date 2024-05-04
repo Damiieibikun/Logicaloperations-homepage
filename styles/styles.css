@@ -603,7 +603,7 @@ body {
 
 @media screen and (max-width: 655px) and (min-width: 426px) {
   .hero-bg {
-    height: 45vh;
+    height: 35vh;
   }
 
   .nav {
@@ -692,7 +692,7 @@ body {
   }
 
   .hero-bg {
-    height: 45vh;
+    height: 35vh;
   }
   .hero-items img {
     width: 90%;
