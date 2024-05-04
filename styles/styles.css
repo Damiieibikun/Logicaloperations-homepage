@@ -235,7 +235,7 @@ body {
 
 .grid5{
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     color: white; 
     background-color: #009ddc;
 }
@@ -255,6 +255,23 @@ body {
 .grid-items5 img{
     max-width: 100%;
 }
+
+/* Grid 6 */
+.grid6{
+    grid-template-columns: 2fr 1fr;
+    color: white; 
+    background-color: #ffc427;
+}
+
+.grid-items6{
+    border: 1px solid rgba(0, 0, 0, 0.884);
+    padding: 20px;
+}
+
+.grid6-arrow{
+    max-width: 50%;
+}
+
 
 /* Media queries */
 
@@ -284,7 +301,7 @@ body {
       width: 25%;
     }
     .hero {
-      height: 100vh;
+      height: 90vh;
       padding: 35px 45px;
     }
   
@@ -312,6 +329,14 @@ body {
 
     .grid-items5 {
         padding: 70px;  
+    }
+
+    .grid-items6 {
+        padding: 20px 70px;  
+    }
+
+    .grid6-txt{
+    padding: 40px;
     }
   }
 
@@ -368,6 +393,10 @@ body {
 
     .grid-items5 {
         padding: 70px;  
+    }
+
+    .grid-items6 {
+        padding:20px 70px;  
     }
   }
 
@@ -427,6 +456,10 @@ body {
 }
 
 .grid-items5 {
+    padding: 50px;  
+}
+
+.grid-items6 {
     padding: 50px;  
 }
 }
@@ -495,6 +528,10 @@ body {
 }
 
 .grid-items5 {
+    padding: 20px 50px;  
+}
+
+.grid-items6 {
     padding: 20px 50px;  
 }
 }
