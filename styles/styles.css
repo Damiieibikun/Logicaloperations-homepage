@@ -457,7 +457,7 @@ body {
   }
   .nav button {
     font-size: 1.2vw;
-    padding: 7px;
+    padding: 5px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -528,7 +528,7 @@ body {
     -o-border-radius: 5px;
   }
   #logo img {
-    width: 40%;
+    width: 35%;
     margin-left: 10px;
   }
   .menu-info {
@@ -605,7 +605,7 @@ body {
         -o-border-radius: 3px;
       }
       #logo img {
-        width: 50%;
+        width: 45%;
         margin-left: 10px;
       }
       .menu-info {
