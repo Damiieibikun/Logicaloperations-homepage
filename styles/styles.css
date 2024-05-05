@@ -578,7 +578,7 @@ body {
         width: 45vw;
     }
     .hero-bg {
-        padding-top: 15vh;
+        padding-top: 10vh;
     }
     .grid-items2 {
         padding: 18px;
@@ -602,7 +602,7 @@ body {
 
 @media screen and (max-width: 655px) and (min-width: 426px) {
     .hero-bg {
-        padding-top: 10vh;
+        padding-top: 7vh;
     }
     .nav {
         font-size: 1.5vw;
@@ -685,7 +685,7 @@ body {
         width: 15%;
     }
     .hero-bg {
-        padding-top: 10vh;
+        padding-top: 7vh;
     }
     .hero-items img {
         width: 90%;
