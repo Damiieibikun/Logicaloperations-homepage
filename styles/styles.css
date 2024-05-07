@@ -222,13 +222,15 @@ body {
 .grid3 {
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
-  background-color: #7fc027;
+  background-color: #55801A;
+  
 }
 
 .grid-items3 {
   border: 1px solid rgba(0, 0, 0, 0.594);
   padding: 15px;
   flex-direction: column;
+  background-color: #7fc027;
 }
 
 .grid3-span2 {
