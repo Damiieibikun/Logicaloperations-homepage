@@ -229,7 +229,7 @@ body {
   padding: 15px;
   flex-direction: column;
   position: relative;
-  padding: 20px;
+  padding: 30px;
 }
 
 .grid3-span2 {
@@ -261,27 +261,34 @@ body {
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
   -o-transition: 0.5s all;
-  z-index: 998;
+  z-index: 2;
   background-color: #7fc027;
+  flex-direction: column;
 }
 
 .skew-container:hover {
   .open-left {
-    transform: perspective(1000px) translateX(-30px) rotateY(-45deg);
-    -webkit-transform: perspective(1000px) translateX(-30px) rotateY(-45deg);
-    -moz-transform: perspective(1000px) translateX(-30px) rotateY(-45deg);
-    -ms-transform: perspective(1000px) translateX(-30px) rotateY(-45deg);
-    -o-transform: perspective(1000px) translateX(-30px) rotateY(-45deg);
-    border: 1px outset #7fc027;
-  }
+    transform: perspective(1000px) translateX(-60px) translateY(2px)      rotateY(-30deg);
+    -webkit-transform: perspective(1000px) translateX(-60px) translateY(2px)      rotateY(-30deg);
+    -moz-transform: perspective(1000px) translateX(-60px) translateY(2px)      rotateY(-30deg);
+    -ms-transform: perspective(1000px) translateX(-60px) translateY(2px)      rotateY(-30deg);
+    -o-transform: perspective(1000px) translateX(-60px) translateY(2px)      rotateY(-30deg);
+    border: 3px outset #7fc027;
+    padding: 13px;
+    box-shadow: 2px 2px 2px 2px #6363633f;
+    z-index: 3;
+}
   .open-right {
-    transform: perspective(1000px) translateX(30px) rotateY(45deg);
-    -webkit-transform: perspective(1000px) translateX(30px) rotateY(45deg);
-    -moz-transform: perspective(1000px) translateX(30px) rotateY(45deg);
-    -ms-transform: perspective(1000px) translateX(30px) rotateY(45deg);
-    -o-transform: perspective(1000px) translateX(30px) rotateY(45deg);
-    border: 1px outset #7fc027;
-  }
+    transform: perspective(1000px) translateX(60px) translateY(3px)      rotateY(30deg);
+    -webkit-transform: perspective(1000px) translateX(60px) translateY(3px)      rotateY(30deg);
+    -moz-transform: perspective(1000px) translateX(60px) translateY(3px)      rotateY(30deg);
+    -ms-transform: perspective(1000px) translateX(60px) translateY(3px)      rotateY(30deg);
+    -o-transform: perspective(1000px) translateX(60px) translateY(3px)      rotateY(30deg);
+    border: 3px outset #7fc027;
+    padding: 13px;
+    box-shadow: 2px 2px 2px 2px #6363633f;
+    z-index: 3;
+}
 }
 
 .background-right,
@@ -597,7 +604,7 @@ body {
     padding: 30px;
   }
   .grid-items3 {
-    padding: 30px;
+    padding: 70px;
   }
 
   .grid-items5 {
@@ -659,7 +666,7 @@ body {
     padding: 25px;
   }
   .grid-items3 {
-    padding: 25px;
+    padding: 65px;
   }
 
   .show {
@@ -718,7 +725,7 @@ body {
     padding: 18px;
   }
   .grid-items3 {
-    padding: 20px;
+    padding: 45px;
   }
 
   .show {
@@ -783,7 +790,7 @@ body {
     padding: 18px;
   }
   .grid-items3 {
-    padding: 18px;
+    padding: 45px;
   }
   .show {
     padding: 20px;
