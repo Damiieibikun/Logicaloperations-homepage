@@ -281,6 +281,36 @@ body {
   font-weight: 200;
 }
 
+
+
+
+
+.hide{
+    display: none;
+}
+
+.flip:hover{
+.show{
+    display: none;
+}
+.hide {
+    display: flex;
+    flex-direction: column;
+     color: white;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Grid 5 */
 
 .grid5 {
@@ -296,11 +326,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.884);
   padding: 20px;
   position: relative;
-  /*right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  */
   transition: 0.4s all ease-in-out;
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
@@ -357,7 +382,6 @@ body {
   left: 30px;
   top: 30px;
   box-shadow: 2px 2px 2px 2px #1313133d;
-  
 }
 
 .grid5-span4 {
@@ -374,7 +398,7 @@ body {
 .grid6 {
   grid-template-columns: 2fr 1fr;
   color: white;
-  background-color: #DF8E00;
+  background-color: #df8e00;
   position: relative;
   z-index: 1;
 }
@@ -392,8 +416,7 @@ body {
   -o-transition: 0.4s;
 }
 
-.grid6 :nth-child(2):hover
- {
+.grid6 :nth-child(2):hover {
   left: 30px;
   border: none;
   box-shadow: 2px 2px 2px 2px #1313133d;
