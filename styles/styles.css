@@ -256,7 +256,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   color: white;
-  background-color: #972169;
+  /* background-color: #6A1D4C; */
   position: relative;
   z-index: 1;
 }
@@ -265,6 +265,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.884);
   padding: 15px;
   flex-direction: column;
+  background-color: #972169;
+  
 }
 
 .grid4-span2 {
@@ -281,35 +283,51 @@ body {
   font-weight: 200;
 }
 
-
-
-
-
-.hide{
-    display: none;
+.flip {
+  overflow: hidden; 
+  position: relative;
+  background-color: #6A1D4C;
+  padding: 0;
 }
 
-.flip:hover{
 .show{
-    display: none;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #972169;
 }
+
 .hide {
+ 
+  top: 100%;
+  transition: all 0.3s ease-out;
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #972169;
+}
+
+.hide h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.flip:hover {
+  .show {
+    transform:perspective(500px) rotatex(-90deg);
+}
+  .hide {
     display: flex;
     flex-direction: column;
-     color: white;
-   }
+    color: white;
+    top: 0;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
+.ml-20{
+    margin-left: 20px;
+}
 
 /* Grid 5 */
 
@@ -520,14 +538,18 @@ body {
   .grid-items3 {
     padding: 30px;
   }
-  .grid-items4 {
-    padding: 20px 70px;
-  }
+
   .grid-items5 {
     padding: 70px;
   }
   .grid-items6 {
     padding: 20px 70px;
+  }
+  .show {
+    padding: 20px 50px;
+  }
+  .hide {
+    padding: 20px 50px;
   }
   .grid6-txt {
     padding: 40px;
@@ -578,8 +600,12 @@ body {
   .grid-items3 {
     padding: 25px;
   }
-  .grid-items4 {
-    padding: 20px 70px;
+ 
+  .show {
+    padding: 20px 50px;
+  }
+  .hide {
+    padding: 20px 50px;
   }
   .grid-items5 {
     padding: 70px;
@@ -633,7 +659,11 @@ body {
   .grid-items3 {
     padding: 20px;
   }
-  .grid-items4 {
+ 
+  .show {
+    padding: 20px;
+  }
+  .hide {
     padding: 20px;
   }
   .grid-items5 {
@@ -694,7 +724,10 @@ body {
   .grid-items3 {
     padding: 18px;
   }
-  .grid-items4 {
+  .show {
+    padding: 20px;
+  }
+  .hide {
     padding: 20px;
   }
   .grid-items5 {
@@ -755,6 +788,12 @@ body {
   .hero-btns {
     width: 45vw;
   }
+  .show {
+    padding: 20px;
+  }
+  .hide {
+    padding: 20px;
+  }
 }
 
 /* Mobile */
@@ -810,6 +849,12 @@ body {
   .hero-downarrow img {
     max-width: 15%;
   }
+  .show {
+    padding: 20px;
+  }
+  .hide {
+    padding: 20px;
+  }
 }
 
 /* small screens */
@@ -863,5 +908,11 @@ body {
   }
   .hero-downarrow img {
     max-width: 10%;
+  }
+  .show {
+    padding: 20px;
+  }
+  .hide {
+    padding: 20px;
   }
 }
