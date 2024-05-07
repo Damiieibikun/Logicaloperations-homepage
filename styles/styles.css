@@ -417,6 +417,7 @@ body {
   -moz-transition: 0.4s all ease-in-out;
   -ms-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
+  box-shadow: 2px 2px 2px 2px #1313133d;
 }
 
 .grid5 :nth-child(3) {
@@ -447,27 +448,23 @@ body {
 .grid5 :nth-child(1):hover {
   right: 30px;
   bottom: 30px;
-  box-shadow: 2px 2px 2px 2px #1313133d;
   border: none;
 }
 
 .grid5 :nth-child(2):hover {
   left: 30px;
   bottom: 30px;
-  box-shadow: 2px 2px 2px 2px #1313133d;
   border: none;
 }
 
 .grid5 :nth-child(4):hover {
   right: 30px;
   top: 30px;
-  box-shadow: 2px 2px 2px 2px #1313133d;
   border: none;
 }
 .grid5 :nth-child(5):hover {
   left: 30px;
   top: 30px;
-  box-shadow: 2px 2px 2px 2px #1313133d;
 }
 
 .grid5-span4 {
@@ -500,12 +497,12 @@ body {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+  box-shadow: 2px 2px 2px 2px #1313133d;
 }
 
 .grid6 :nth-child(2):hover {
   left: 30px;
   border: none;
-  box-shadow: 2px 2px 2px 2px #1313133d;
 }
 
 .grid6-arrow {
