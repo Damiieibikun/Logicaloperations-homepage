@@ -508,6 +508,9 @@ body {
 }
 
 /* mobile grid */
+.main-mobile{
+  display: hidden;
+}
 .grid-mobile {
   display: none;
 }
