@@ -568,7 +568,7 @@ body {
 }
 
 .grid-mobile-items {
-  height: 15vh;
+  height: 14vh;
   border: 1px solid rgba(0, 0, 0, 0.32);
   color: white;
   padding: 15px 0;
@@ -609,6 +609,7 @@ body {
 .green {
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 18px;
 }
 .black-footer {
   background-color: #060606;
